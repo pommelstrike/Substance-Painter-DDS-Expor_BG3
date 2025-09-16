@@ -22,9 +22,8 @@ pmlstk DDS AutoComposer is a Substance Painter plugin designed to automate the c
    - TexConv executable from the Baldur's Gate 3 Toolkit (typically located in `\SteamLibrary\steamapps\common\Baldurs Gate 3 Toolkit`).
 
 2. **Download and Setup**:
-   - Clone or download this repository.
+   - [Download from Release Page.](https://github.com/pommelstrike/Substance-Painter-DDS-Expor_BG3/releases)
    - Place the `pmlstk_dds_autocomposer.py` file in your Substance Painter plugins directory (e.g., `Documents\Adobe\Adobe Substance 3D Painter\python\plugins`).
-   - Ensure the `LICENSE` file is included in the repository root for GPL compliance.
 
 3. **Loading the Plugin**:
    - Launch Substance Painter.
