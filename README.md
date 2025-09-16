@@ -9,7 +9,7 @@ Mainly made for making Starfield modding easier via DDS creation, but could be t
 No more spending 20 minutes manually converting those 20 different maps to DDS via tedious steps in PS/Intel/Paint.net etc
 
 # Installation:
-Extract the starfield-dds-exporter.py into your Substance Painter Plugin folder:
+Extract the bg3-dds-exporter.py into your Substance Painter Plugin folder:
 <pre>
 C:\Users\username\Documents\Adobe\Adobe Substance 3D Painter\python\plugins
 </pre>
