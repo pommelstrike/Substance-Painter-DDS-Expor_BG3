@@ -1,42 +1,70 @@
-<h1 align="center">
-BG3 Painter DDS Exporter
-</h1>
+pmlstk DDS AutoComposer
+Overview
+pmlstk DDS AutoComposer is a Substance Painter plugin designed to automate the conversion of exported TGA textures to DDS format, specifically tailored for Baldur's Gate 3 (BG3) modding workflows. This plugin is a fork of the original BG3 DDS Exporter Plugin developed by Emil Eldstål in 2023, with enhancements including customizable suffix management, JSON-based import/export of settings, and an improved user interface for greater flexibility in texture processing.
+Features
+
+Automatic conversion of TGA files to DDS using TexConv (from the Baldur's Gate 3 Toolkit).
+Customizable suffix mappings for DDS compression formats (e.g., BC1_UNORM, BC3_UNORM).
+Enable/disable suffixes via a user-friendly table interface.
+Support for adding custom suffixes with optional comments.
+Import and export suffix settings as JSON files.
+Configurable TexConv path with persistent settings stored in an INI file.
+Logging panel for monitoring export and conversion processes.
+Options to toggle DDS export and overwrite existing files.
+
+Installation
+
+Prerequisites:
+
+Substance Painter 8 ~ 10
+TexConv executable from the Baldur's Gate 3 Toolkit (typically located in \SteamLibrary\steamapps\common\Baldurs Gate 3 Toolkit).
 
 
-A Substance Painter DDS export plugin to automate the TGA to DDS conversion.
+Download and Setup:
 
-Mainly made for making Starfield modding easier via DDS creation, but could be tweaked in the future to be more modular and dependant on export presets.
-No more spending 20 minutes manually converting those 20 different maps to DDS via tedious steps in PS/Intel/Paint.net etc
+Clone or download this repository.
+Place the pmlstk_dds_autocomposer.py file in your Substance Painter plugins directory (e.g., Documents\Adobe\Adobe Substance 3D Painter\python\plugins).
+Ensure the LICENSE file is included in the repository root for GPL compliance.
 
-# Installation:
-Extract the bg3-dds-exporter.py into your Substance Painter Plugin folder:
-<pre>
-C:\Users\username\Documents\Adobe\Adobe Substance 3D Painter\python\plugins
-</pre>
 
-(Can also be found using the Python > Plugins Folder button in the top row)
+Loading the Plugin:
 
-## Export preset:
-Move the Starfield.spexp from the optional files to this folder: 
-<pre>
-C:\Users\username\Documents\Adobe\Adobe Substance 3D Painter\assets\export-presets
-</pre>
+Launch Substance Painter.
+Navigate to Python > Plugins > Reload All Plugins if necessary.
+The plugin will appear as a dockable panel titled "pmlstk BG3 DDS AutoComposer".
 
-## Enable the BG3-DDS-Exporter under the Python menu
-First time running the plugin it will ask you what folder the Texconv.exe is located in via a UI pop-up. This will create a Starfield-DDS-Exporter-PluginSettings.ini in the plugin folder with the settings saved.
 
-![plugin widget](https://staticdelivery.nexusmods.com/mods/4187/images/4891/4891-1696725603-1907132508.png)
-Dockable widget with output terminal and basic settings
 
-# Dependencies:
-Microsoft Texconv (Download and extract to whatever folder you want)
+Usage
 
-https://github.com/Microsoft/DirectXTex/wiki/Texconv
+Configuration:
 
-# Compatibility
-Developed and tested with Substance Painter 7.3.1 (2021)
+Open the plugin panel.
+Set the TexConv path if not already configured (prompted on first use).
+Customize suffix settings in the "Suffix Settings" group: Enable/disable suffixes, add new ones, or import/export configurations.
 
-## Support
-For support, please use this repository's GitHub Issues tracking service. Feel free to send me an email if you use and like the plugin.
 
-Copyright (c) 2023 Emil Eldstål
+Exporting Textures:
+
+In Substance Painter, export textures as TGA files.
+The plugin automatically detects the export event and converts files to DDS based on active suffix mappings.
+Monitor the process in the "Log" group.
+
+
+Manual Conversion:
+
+Not directly supported in this version; conversions are triggered on export.
+
+
+
+For detailed code-level documentation, refer to the source file comments.
+License
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+You should have received a copy of the GNU General Public License along with this program (see the LICENSE file in the repository root). If not, see <https://www.gnu.org/licenses/>.
+Acknowledgements
+
+Original plugin: DDS Exporter by Emil Eldstål (2023).
+This fork includes modifications for enhanced customization and usability by pmlstk (2025).
+
+If you encounter issues or have suggestions, please open an issue on GitHub.
