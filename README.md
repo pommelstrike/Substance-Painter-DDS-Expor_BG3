@@ -24,6 +24,7 @@ pmlstk DDS AutoComposer is a Substance Painter plugin designed to automate the c
 2. **Download and Setup**:
    - [Download from Release Page.](https://github.com/pommelstrike/Substance-Painter-DDS-Expor_BG3/releases)
    - Place the `pmlstk_dds_autocomposer.py` file in your Substance Painter plugins directory (e.g., `Documents\Adobe\Adobe Substance 3D Painter\python\plugins`).
+   - pLACE the `MODKIT_TEX_AlphaBlend.spexp` file in your Substance Painter plugins directory (e.g.,`Documents\Adobe\Adobe Substance 3D Painter\assets\export-presets\`).
 
 3. **Loading the Plugin**:
    - Launch Substance Painter.
@@ -39,6 +40,7 @@ pmlstk DDS AutoComposer is a Substance Painter plugin designed to automate the c
 
 2. **Exporting Textures**:
    - In Substance Painter, export textures as TGA files.
+![pmlstk DDS AutoComposer Interface](https://i.ibb.co/60J6rwJr/sp-addonv3.png)
    - The plugin automatically detects the export event and converts files to DDS based on active suffix mappings.
    - Monitor the process in the "Log" group.
 
