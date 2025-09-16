@@ -1,5 +1,5 @@
 # pmlstk DDS AutoComposer
-
+![pmlstk DDS AutoComposer Interface](https://i.ibb.co/v45GpVhT/v1sp-addon-0-5x.png)
 ## Overview
 
 pmlstk DDS AutoComposer is a Substance Painter plugin designed to automate the conversion of exported TGA textures to DDS format, specifically tailored for Baldur's Gate 3 (BG3) modding workflows. This plugin is a fork of the original Starfield DDS Exporter Plugin developed by Emil Eldstål in 2023, with enhancements including customizable suffix management, JSON-based import/export of settings, and an improved user interface for greater flexibility in texture processing.
