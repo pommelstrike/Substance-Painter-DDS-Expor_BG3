@@ -47,7 +47,8 @@ pmlstk DDS AutoComposer is a Substance Painter plugin designed to automate the c
 3. **Manual Conversion**:
    - Not directly supported in this version; conversions are triggered on export.
 
-For detailed code-level documentation, refer to the source file comments.
+## Support and Updates
+If you like this tool and would like to show support please visit myy Patreon to stay updated with the latest news and exclusive content on this tool and many visual design tools. Show your support and follow along at [patreon.com/pommelstrike](https://www.patreon.com/pommelstrike).
 
 ## License
 
